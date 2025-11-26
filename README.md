@@ -15,6 +15,7 @@ Besisglas Zigbee 3.0 USB Dongle (ZBM-MG21) Product Introduction
 * [Learn More](#section7)
 
 * [FAQ](#section8)
+* [BUY](#section9)
 
 <a id="section1"></a>
 ## Product Introduction
@@ -56,11 +57,40 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 <a id="section5"></a>
 ## Getting Started
 
+### Step 1: Connecting to the Operating System
+
+| Operating System | Plug & Play | Guide Link |
+| :--------------: | :---------: | :--------: |
+| Windows | No. Driver installation required | [ZBM-MG21]() |
+| Linux/Ubuntu | Yes | / |
+| Raspberry Pi OS | Yes | / |
+| Mac OS | No. Driver installation required | [ZBM-MG21]() |
+| Virtual Machine | It depends on the host where the virtual machine is deployed | [ZBM-MG21]() |
+
+### Step 2: Connecting to Open-source Platforms 
+
+| Open-source Platforms | Guide Link |
+| :-------------------: | :--------: |
+| Home Assistant | [ZBM-MG21]() |
+| Zigbee2MQTT | [ZBM-MG21]() |
+| OpenHab | [ZBM-MG21]() |
+
 <a id="section6"></a>
 ## How to Flash Firmware
+
+### Step 1: Download the Required Software
+- [Windows Platform]()
+- [macOS Platform]()
+- [Linux Platform]()
+
+### Step 2: Flash the Firmware
+
 
 <a id="section7"></a>
 ## Learn More
 
 <a id="section8"></a>
 ## FAQ
+
+<a id="section9"></a>
+## BUY
