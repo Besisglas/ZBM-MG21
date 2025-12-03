@@ -34,7 +34,7 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 | Name                     | Description                                         |
 |--------------------------|-----------------------------------------------------|
 | Zigbee SoC               | EFR32MG21 ARM® Cortex®-M33                          |
-| USB-Serial Chip          | CP2102(N)                                           |
+| USB-Serial Chip          | CH9102F                                             |
 | Input                    | DC 5V ⎓ 500mA                                       |
 | Signal range             | 135 m in free line of sight                         |
 | Signal Strength          | Max 20 dB + antenna gain 2 dB                       |
@@ -61,18 +61,18 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 
 | Operating System | Plug & Play | Guide Link |
 | :--------------: | :---------: | :--------: |
-| Windows | No. Driver installation required [[driver](./driver/CP210x_VCP_Windows.zip)] | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
+| Windows | No. Driver installation required [[driver](./driver/CH343SER_Windows.ZIP)] | [ZBM-MG21 Windows Guide](./Connecting%20to%20Operating%20System.md) |
 | Linux/Ubuntu | Yes | / |
 | Raspberry Pi OS | Yes | / |
-| Mac OS | No. Driver installation required [[driver](./driver/Mac_OSX_VCP_Driver.zip)] | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
-| Virtual Machine | It depends on the host where the virtual machine is deployed | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
+| Mac OS | No. Driver installation required [[driver](./driver/CH341SER_MAC.ZIP)] | [ZBM-MG21 Max OS Guide](./Connecting%20to%20Operating%20System.md) |
+| Virtual Machine | It depends on the host where the virtual machine is deployed | [ZBM-MG21 Virtual Machine Guide](./Connecting%20to%20Operating%20System.md) |
 ### Step 2: Connecting to Open-source Platforms 
 
 | Open-source Platforms | Guide Link |
 | :-------------------: | :--------: |
-| Home Assistant | [ZBM-MG21](./Connecting%20to%20Home%20Assistant%20via%20ZHA.md) |
-| Zigbee2MQTT | [ZBM-MG21](./Connecting%20to%20Zigbee2MQTT.md) |
-| OpenHab | [ZBM-MG21](./Connecting%20to%20OpenHab.md) |
+| Home Assistant | [ZBM-MG21 For Home Assistant](./Connecting%20to%20Home%20Assistant%20via%20ZHA.md) |
+| Zigbee2MQTT | [ZBM-MG21 For Zigbee2MQTT](./Connecting%20to%20Zigbee2MQTT.md) |
+| OpenHab | [ZBM-MG21 For OpenHub](./Connecting%20to%20OpenHab.md) |
 
 <a id="section6"></a>
 ## How to Flash Firmware
@@ -85,9 +85,9 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 
 
 ### Step 1: Download the Required Software
-- [Windows Platform](./software/EzspDongleFlasher-windows-latest.zip)
-- [macOS Platform](./software/EzspDongleFlasher-macos-latest.zip)
-- [Linux Platform](./software/EzspDongleFlasher-ubuntu-latest.zip)
+- [Windows Platform Software](./software/EzspDongleFlasher-windows-latest.zip)
+- [macOS Platform Software](./software/EzspDongleFlasher-macos-latest.zip)
+- [Linux Platform Software](./software/EzspDongleFlasher-ubuntu-latest.zip)
 
 ### Step 2: Flash the Firmware
 

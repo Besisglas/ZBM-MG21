@@ -17,24 +17,24 @@ Please connect the device to the USB port of the host, and install the appropria
 
 ### Step 1: Install Driver
 
-Install the CP210x Driver:
-- [CP210x_VCP_Windows](./driver/CP210x_VCP_Windows.zip)
+Install the CH9102F Driver:
+- [CH9102F_Windows_Driver](./driver/CH343SER_Windows.ZIP)
 
 Or you can download and install the driver via the official Silicon Labs website:
-- [Silicon Labs CP210x Driver Download](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+- [GitHub CH9102F Driver Download](https://github.com/WCH-IC/download/releases/download/CH343/CH343SER.ZIP)
 
 ### Step 2: Confirm that the device is recognised
 
 After the driver is successfully installed, open **Device Manager** and expand **Ports (COM & LPT)**. The corresponding USB device will be recognized.
 
-![Device Manager](images/image-28.png)
+![Device Manager](images/image-7.png)
 
 As shown above, the serial port for the device is: `COM4`
 
 <a id="section2"></a>
 ## Connecting to Linux
 
-Most recent versions of Ubuntu or other Linux distributions already include the CP210x driver by default, so no additional installation is required.
+Most recent versions of Ubuntu or other Linux distributions already include the CH9102F driver by default, so no additional installation is required.
 
 After connecting the ZBDongle device, you can check if it was recognized by entering the following command in the terminal:
 
@@ -44,8 +44,8 @@ sudo dmesg
 
 Output example:
 ```
-[  534.739948] cp210x 3-8:1.0: cp210x converter detected
-[  534.741643] usb 3-8: cp210x converter now attached to ttyUSB0
+[  534.739948] ch341 3-8:1.0: ch341 converter detected
+[  534.741643] usb 3-8: ch341 converter now attached to ttyUSB0
 ```
 
 ### Checking the Serial Port Path
@@ -56,10 +56,6 @@ To obtain the serial port path of the connected device, use the following comman
 ls -l /dev/serial/by-id
 ```
 
-Example output:
-
-![Linux Terminal](images/image-6.png)
-
 The corresponding serial port path is: `/dev/ttyUSB0`
 
 <a id="section3"></a>
@@ -67,16 +63,16 @@ The corresponding serial port path is: `/dev/ttyUSB0`
 
 If Home Assistant is running on a virtual machine, in addition to installing the appropriate driver for the operating system, make sure to connect the device to the virtual machine. VMware is used as an example here.
 
-![VMware Settings](images/image-7.png)
+![VMware Settings](images/image-8.png)
 
 <a id="section4"></a>
 ## Connecting to macOS
 
 ### Step 1: Install Driver
 
-Install the CP210x driver:
-- [Mac_OSX_VCP_Driver](./driver/Mac_OSX_VCP_Driver.zip)
-- Or download from: [Silicon Labs CP210x Driver Download](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+Install the CH9102F driver:
+- [Mac_OSX_Driver](./driver/CH341SER_MAC.ZIP)
+- Or download from: [GitHub CH9102F Driver Download](https://github.com/WCH-IC/download/releases/download/CH341/CH341SER_MAC.ZIP)
 
 ### Step 2: Confirm that the device is recognised
 
@@ -88,14 +84,14 @@ ls /dev/tty.*
 
 If recognized, the information will return after Enter:
 
-![macOS Terminal](images/image-8.png)
+![macOS Terminal](images/image-10.png)
 
 The serial port is: `/dev/tty.usbserial-14220`
 
 <a id="section5"></a>
 ## Connecting to Raspberry Pi OS
 
-Most Raspberry Pi OS typically includes the CP210x driver by default. No installation is required.
+Most Raspberry Pi OS typically includes the CH9102F driver by default. No installation is required.
 
 After connecting the ZBDongle device, you can check if it was recognized by entering the following command in the terminal:
 
@@ -111,8 +107,8 @@ To obtain the serial port path of the connected device, use the following comman
 ls -l /dev/serial/by-id
 ```
 
-Example output:
+Example :
 
-![Raspberry Pi Terminal](images/image-9.png)
+![Raspberry Pi](images/image-28.png)
 
 The corresponding serial port path is: `/dev/ttyUSB0`
