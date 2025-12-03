@@ -61,10 +61,10 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 
 | Operating System | Plug & Play | Guide Link |
 | :--------------: | :---------: | :--------: |
-| Windows | No. Driver installation required | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
+| Windows | No. Driver installation required [[driver](./driver/CP210x_VCP_Windows.zip)] | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
 | Linux/Ubuntu | Yes | / |
 | Raspberry Pi OS | Yes | / |
-| Mac OS | No. Driver installation required | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
+| Mac OS | No. Driver installation required [[driver](./driver/Mac_OSX_VCP_Driver.zip)] | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
 | Virtual Machine | It depends on the host where the virtual machine is deployed | [ZBM-MG21](./Connecting%20to%20Operating%20System.md) |
 ### Step 2: Connecting to Open-source Platforms 
 
