@@ -77,19 +77,38 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 <a id="section6"></a>
 ## How to Flash Firmware
 
+### Supported Firmware Types
+
+- [Zigbee NCP firmware](./firmware/mg21_zigbee_ncp_uart_hw_donglel_v8.2.1.0.gbl) (to use the dongle as a Zigbee coordinator) 
+- [Zigbee Router firmware](./firmware/mg21_zigbee_z3_light_donglel_v8.2.1.0.gbl) (to use the dongle as a Zigbee router and it will cause the dongle to behave as a light device) 
+- [OpenThread RCP firmware](./firmware/mg21_ot-rcp_donglee_v2.6.1.0.gbl) (to use the dongle as a Thread coordinator)
+
+
 ### Step 1: Download the Required Software
-- [Windows Platform]()
-- [macOS Platform]()
-- [Linux Platform]()
+- [Windows Platform](./software/EzspDongleFlasher-windows-latest.zip)
+- [macOS Platform](./software/EzspDongleFlasher-macos-latest.zip)
+- [Linux Platform](./software/EzspDongleFlasher-ubuntu-latest.zip)
 
 ### Step 2: Flash the Firmware
 
 - Open the Dongle Upgrade Tool.
+- Put the firmware file in the "**firmware**" folder under the current directory of the program, and then click the "refresh" button of the program for Firmware File.
 - Select the appropriate firmware file.
 - Select the USB Serial Port.
 - Click “Start Flash” to upgrade the firmware.
 
 <img width="600" height="400" alt="Dongle Upgrade Tool" src="images/zigbee_dongle_upgrade.gif" />
+
+### The Other Ways
+
+You can also use the SONOFF Dongle Flasher for firmware upgrades.
+
+Please refer to the instructions in the link [SONOFF Dongle Flasher](https://dongle.sonoff.tech/guide/zbdongle-e/how_to_upgrade_zigbee_firmware/) and use the SONOFF Dongle Flasher for firmware upgrades.
+
+**⚠️ WARNING! It is mandatory to select the SoC model EFR32MG21 — no other models are compatible.**
+
+
+![alt text](./images/image-sonoff.png)
 
 <a id="section7"></a>
 ## Learn More
@@ -98,7 +117,8 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 ## FAQ
 
 ### How to put the device with router firmware into the pairing mode?
-Just press and hold the **Boot** button for more than 8 seconds and then release it. When you see the green light flashing, you will enter the pairing mode.
+After flashing the official Router firmware, the device will automatically reboot and enter pairing mode. and the dongle device will
+cause the dongle to behave as a light device.
 
 ### Devices supported by Besisglas Zigbee Dongle
 Besisglas Zigbee Dongle works great with most Zigbee devices, including popular brands like Aqara, Philips Hue, IKEA, Tuya, Sonoff, and many more, mainly depends on the home automation platform on which the user uses dongle:
