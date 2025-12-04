@@ -103,9 +103,11 @@ Additionally, it supports easy firmware flashing using the official Dongle Upgra
 
 You can also use the SONOFF Dongle Flasher for firmware upgrades.
 
+> **NOTE: The SONOFF Dongle uses the CP210X serial chip, while the Besisglas Zigbee Dongle uses the CH9102F serial chip.**
+
 Please refer to the instructions in the link [SONOFF Dongle Flasher](https://dongle.sonoff.tech/guide/zbdongle-e/how_to_upgrade_zigbee_firmware/) and use the SONOFF Dongle Flasher for firmware upgrades.
 
-**⚠️ WARNING! It is mandatory to select the SoC model EFR32MG21 — no other models are compatible.**
+> **⚠️ WARNING! It is mandatory to select the SoC model EFR32MG21 — no other models are compatible.**
 
 
 ![alt text](./images/image-sonoff.png)
